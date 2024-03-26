@@ -2,6 +2,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from './components/Header'
 import Footer from './components/Footer'
+import AuthProvider from '@/app/components/AuthProvider';
+
 
 import { McLaren } from 'next/font/google'
 
@@ -17,15 +19,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={mcLaren.className}>
 
-
+ <AuthProvider>
       <body >
-      
       <Header />
-      {children}
-      
-      <Footer />
+            {children}
+          <Footer />
       </body>
-
+ </AuthProvider>
     </html>
   );
 }

@@ -15,6 +15,7 @@ html {
 body {
   background: #eee;
   padding: 0 16px;
+  overflow: hidden;
 }
 
 
@@ -49,7 +50,8 @@ footer p {
   border-radius: 7px;
   box-shadow: 0 2px 5px #ccc;
   padding: 10px;
-  width: 240px;
+  width: 100%;
+  max-width: 400px;
   margin: 16px;
   float: left;
 }
@@ -79,7 +81,8 @@ footer p {
 
 form {
   position: relative;
-  width: 480px;
+  width: 100%;
+  max-width: 480px;
   margin: 30px auto 20px auto;
   background: #fff;
   padding: 15px;
@@ -109,4 +112,20 @@ form button {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   outline: none;
+}
+
+.navigation-list{
+  display:flex;
+}
+.navigation-list li{
+  list-style:none;
+  margin-right:10px;
+}
+.navigation-list li a{
+  text-decoration:none;
+  color:#fff;
+  font-size:1.2em;
+}
+.navigation-list li a:hover{
+  color:#f5ba13;
 }

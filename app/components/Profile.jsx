@@ -1,6 +1,5 @@
 import React from 'react'
-import Button from '@mui/material/Button';
-
+import Avatar from '@mui/material/Avatar';
 
 
 
@@ -12,8 +11,8 @@ export default function Profile(props) {
             {true ? (
                 <div>
                <div style={{display:"flex", alignItems: "center", gap:"10px"}}>
-                    {/* <ProfileImage src={props.user.profile.picture} />
-                    <p>Name: {props.user.profile.name}</p> */}
+                    <ProfileImage src={props.user.profile.picture} />
+                    <p>Name: {props.user.profile.name}</p>
                     
                     </div>
                     <Button style={{float:"right"}} variant="contained">Log Out</Button>
