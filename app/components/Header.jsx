@@ -1,12 +1,10 @@
 import React from 'react'
-import Profile from './Profile'
 import { getServerSession } from 'next-auth'
 import Button from '@mui/material/Button';
 import Link from 'next/link';
 import options from '@/app/api/auth/[...nextauth]/options'
 import Avatar from '@mui/material/Avatar';
 import NavigationList from '@/app/components/NavigationList'
-// import OpenNav from '@/app/components/OpenNav'
 import BasicSpeedDial from '@/app/components/BasicSpeedDial'
 
 
