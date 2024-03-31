@@ -131,17 +131,20 @@ p {
 }
 
 .note button {
-  position: relative;
-  float: right;
-  margin-right: 10px;
-  color: #f54c13;
-  border: none;
-  width: 36px;
-  height: 36px;
-  cursor: pointer;
-  outline: none;
-  border-radius: 50%;
+  position:relative;
+  float:right;
+  margin-right:10px;
+  color:#d5d5d5;
+  background-color: transparent;
+  border:none;
+  width:36px;
+  height:36px;
+  cursor:pointer;
+  outline:none;
+  border-radius:50%;
+  background-color: transparent;
 }
+
 
 .status-container svg {
   fill: #979797;
@@ -287,7 +290,9 @@ ul.navigation-list-old li {
 }
 .noteBody{
   min-height: 156px;
+  margin-bottom: 2em;
 }
+
 
 /* CSS */
 .button-61 {

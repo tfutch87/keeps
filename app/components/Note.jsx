@@ -36,7 +36,7 @@ const markSeen = async (e) => {
      <div>
      <p className="category"> 
      
-     <Link className="category-link" href={`https://keeps-delta.vercel.app/secret/${props.id}`} > 
+     <Link className="category-link" href={`https://keeps-delta.vercel.app/secretCategory/${props.category}`} > 
      
      {props.category}
      
