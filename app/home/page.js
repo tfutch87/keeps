@@ -11,6 +11,11 @@ const uri =  process.env.MONGODB_URI;
 
   const { notes } = await getNotes();
 
+  // trim content words to 25 words or less
+  let result = note.noteContent;
+  let text = result.substring(1, 100);
+
+
   return (
     <>
     <CreateArea />
@@ -19,7 +24,7 @@ const uri =  process.env.MONGODB_URI;
         key={note._id} 
         id={note._id}
         noteTitle={note.noteTitle} 
-        noteContent={note.noteContent} 
+        noteContent={text} 
         category={note.category} 
         active={note.active} 
         status={note.status} 

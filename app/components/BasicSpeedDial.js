@@ -26,7 +26,7 @@ export default function BasicSpeedDial() {
     <Box sx={{ height: 350, transform: 'translateZ(0px)', flexGrow: 1, position: 'absolute' }}>
       <SpeedDial
         ariaLabel="SpeedDial basic example"
-        sx={{ position: 'absolute', bottom: 16, right: 16 }}
+        sx={{ position: 'absolute', bottom: 27, right: "-10px" }}
         icon={<MenuRoundedIcon />}
         direction="down"
       >
