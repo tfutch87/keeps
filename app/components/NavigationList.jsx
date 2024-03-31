@@ -3,6 +3,7 @@ import categories from "@/app/components/categories";
 import Link from 'next/link';
 
 
+
 export default function NavigationList() {
 
     const categoryOptions = categories()
@@ -10,7 +11,8 @@ export default function NavigationList() {
 
 
     return (
-        <ul className="navigation-list">
+        <div className="navigation-container close">
+        <ul className="navigation-list-old">
 
             {categoryOptions.filter((category) => category !== "-Select Category-").map((category, index) => (
                 
@@ -18,5 +20,6 @@ export default function NavigationList() {
             ))}
 
         </ul>
+        </div>
     )
 }

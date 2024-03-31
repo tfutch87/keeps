@@ -13,15 +13,24 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 body {
-  background: #eee;
-  padding: 0 16px;
-  overflow: hidden;
+  background: #e9fff6;
+  height: 100vh;
+  
+}
+
+a {
+  text-decoration: none;
+  color: #979797;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #a3a2a2;
 }
 
 
 header {
-  background-color: #f5ba13;
-  margin: auto -16px;
+  background-color: #227753;
   padding: 16px 32px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
@@ -31,6 +40,21 @@ header h1 {
   font-weight: 400;
   font-style: normal;
   color: #fff;
+}
+
+
+.page-header {
+  padding: 20px 2em;
+}
+
+header .logo a {
+  font-family: "Carrois Gothic", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: -2px;
+  font-size: 1em;
 }
 
 
@@ -46,7 +70,7 @@ footer p {
   color: #ccc;
 }
 .note {
-  background: #fff;
+  background: #f6fefa;
   border-radius: 7px;
   box-shadow: 0 2px 5px #ccc;
   padding: 10px;
@@ -55,28 +79,68 @@ footer p {
   margin: 16px;
   float: left;
 }
+
+span {
+  color: #c6c2c2;
+}
+
+.secret-note {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 25px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.secret-note h1{
+  margin-bottom: 1em;
+}
+
+.secret-note .content{
+  margin-bottom: 1em;
+}
+
+.margin-auto{
+  margin: auto;
+}
+
+.margin-top-3{
+  margin-top: 3em;
+}
+
 .note h1 {
   font-size: 1.1em;
   margin-bottom: 6px;
 }
-.note p {
-  font-size: 1.1em;
+p {
+  font-size: 16px;
   margin-bottom: 10px;
   white-space: pre-wrap;
   word-wrap: break-word;
   color: #848181;
 }
 
+.noteTitle {
+  text-transform: capitalize;
+  font-size: 1.55em !important;
+}
+
 .note button {
   position: relative;
   float: right;
   margin-right: 10px;
-  color: #f5ba13;
+  color: #f54c13;
   border: none;
   width: 36px;
   height: 36px;
   cursor: pointer;
   outline: none;
+  border-radius: 50%;
+}
+
+.status-container svg {
+  fill: #979797;
 }
 
 form {
@@ -103,7 +167,7 @@ form button {
   position: absolute;
   right: 18px;
   bottom: -18px;
-  background: #f5ba13;
+  background: #227753;
   color: #fff;
   border: none;
   border-radius: 50%;
@@ -126,6 +190,149 @@ form button {
   color:#fff;
   font-size:1.2em;
 }
-.navigation-list li a:hover{
-  color:#f5ba13;
+
+
+.navigation-container {
+  background-color: #fbfcfb;
+  position: absolute;
+  right: 90%;
+  top: 80%;
+  padding: 1em;
+  width: 100%;
+  z-index: 5;
+  cursor: pointer;
+  border-radius: 10px 0;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.navigation-container a {
+  color: green;
+}
+
+
+
+.box select {
+  background-color: #ededed00;
+  color: #848181;
+  padding: 12px;
+  padding-left: 0;
+  width:100%;
+  border: none;
+  font-size: 20px;
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+}
+
+.custom-box {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  z-index: 10;
+}
+
+
+.box:hover::before {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.box select option {
+  padding: 30px;
+}
+
+.custom-box {
+  position: relative;
+}
+
+.open{
+  display: block;
+}
+.close{
+  display: none;
+}
+
+ul.navigation-list-old {
+  list-style: none;
+  line-height: 1.7;
+}
+
+ul.navigation-list-old a {
+  text-decoration: none;
+}
+
+ul.navigation-list-old li {
+  margin-bottom: 1em;
+}
+
+.noteFooter {
+  height: 40px;
+  margin-bottom: 1.5em;
+}
+.noteBody{
+  min-height: 156px;
+}
+
+/* CSS */
+.button-61 {
+  align-items: center;
+  appearance: none;
+  border-radius: 4px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 1px -2px,rgba(0, 0, 0, .14) 0 2px 2px 0,rgba(0, 0, 0, .12) 0 1px 5px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: Roboto,sans-serif;
+  font-size: .875rem;
+  font-weight: 500;
+  height: 36px;
+  justify-content: center;
+  letter-spacing: .0892857em;
+  line-height: normal;
+  min-width: 64px;
+  outline: none;
+  overflow: visible;
+  padding: 0 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  will-change: transform,opacity;
+}
+
+.button-61:hover {
+  box-shadow: rgba(0, 0, 0, .2) 0 2px 4px -1px, rgba(0, 0, 0, .14) 0 4px 5px 0, rgba(0, 0, 0, .12) 0 1px 10px 0;
+}
+
+.button-61:disabled {
+  background-color: rgba(0, 0, 0, .12);
+  box-shadow: rgba(0, 0, 0, .2) 0 0 0 0, rgba(0, 0, 0, .14) 0 0 0 0, rgba(0, 0, 0, .12) 0 0 0 0;
+  color: rgba(0, 0, 0, .37);
+  cursor: default;
+  pointer-events: none;
+}
+
+.button-61:not(:disabled) {
+  background-color: #6bf5bc;
+}
+
+.button-61:focus {
+  box-shadow: rgba(0, 0, 0, .2) 0 2px 4px -1px, rgba(0, 0, 0, .14) 0 4px 5px 0, rgba(0, 0, 0, .12) 0 1px 10px 0;
+}
+
+.button-61:active {
+  box-shadow: rgba(0, 0, 0, .2) 0 5px 5px -3px, rgba(0, 0, 0, .14) 0 8px 10px 1px, rgba(0, 0, 0, .12) 0 3px 14px 2px;
+  background: #6bf5bc;
+}
+
+.AutoStoriesRoundedIcon{
+  margin-left: .25em;
 }

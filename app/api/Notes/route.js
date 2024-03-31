@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 
 export async function GET() {
   try {
-    const notes = await Note.find();
+    const notes = await Note.find().sort({date: 'asc'});
 
     return NextResponse.json({ notes }, { status: 200 });
   } catch (err) {

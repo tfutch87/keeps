@@ -35,11 +35,19 @@ function secretsList (){
   )
 }
 
+const value = params.category;
+const output = value.replace(/%20/g, " ");
+console.log(output); // Output: Date Night
+
+
   return (
     <>
-   
-    <h1>Category: {params.category}</h1>
+    <div className="page-header" >
+    <h1>{output}</h1>
+    </div>
+    <main>
      {notes.length > 0 ? secretsList() : <p>Sorry no Secrets in this category</p>}
+    </main>
     </>
   )
 }

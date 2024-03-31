@@ -12,9 +12,9 @@ function CreateArea() {
 const {data : session} = useSession();
 
 const [formData, setFormData] = useState({
-  email: 'tfutch87@yahoo.com',
-  userName: 'tfutch',
-  userProfileImage: 'someimg.png',
+  email: '',
+  userName: '',
+  userProfileImage: '',
   noteTitle: '',
   noteContent: '',
   status: 'unseen',
@@ -54,7 +54,16 @@ async function handleSubmit(e){
           },
           method: 'POST'
         });
-        
+      
+        const notification_res = await fetch('/api/Send', {
+                  body: JSON.stringify(formData),
+                  headers: {
+                    'Content-Type': 'application/json'
+                  },
+                  method: 'POST'
+        });  
+
+
         setFormData(
           {
             email: '',
@@ -67,7 +76,7 @@ async function handleSubmit(e){
             active : true,
           }
         )
-        
+      
         router.push('/');
         router.refresh();
        
@@ -85,12 +94,13 @@ function form(){
     <input onChange={updateNote} name="status" required={true} value={formData.status} placeholder="Status" type="hidden" />
     <input onChange={updateNote} name="email" required={true} value={formData.email} placeholder="email" type="hidden" />
     <input onChange={updateNote} name="status" required={true} value={formData.status} type="hidden" />
-
-        <select onChange={updateNote} id="category" name="category">
+    <div className="box">
+         <select onChange={updateNote} id="category" name="category">
         {categoryOptions.map((category)=>(
           <option key={category} value={category}>{category}</option>
         ))}
         </select>
+        </div>
     <textarea onChange={updateNote} name="noteContent" value={formData.noteContent} placeholder="Create a Secret..." rows="3" />
     <button type="submit" value="Create Ticket">Add</button>
   </form>
