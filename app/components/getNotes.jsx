@@ -3,7 +3,7 @@ import React from 'react'
  const getNotes = async() => {
 
         try {
-          const res = await fetch('http://localhost:3000/api/Notes', {
+          const res = await fetch('https://keeps-delta.vercel.app/api/Notes', {
             method: 'GET',
             cache: "no-store",
             headers: {

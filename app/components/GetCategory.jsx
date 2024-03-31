@@ -5,7 +5,7 @@ const GetCategory = async(name) => {
   // console.log(name)
 
     try {
-      const res = await fetch(`http://localhost:3000/api/Category/${name}`, {
+      const res = await fetch(`https://keeps-delta.vercel.app/api/Category/${name}`, {
         method: 'GET',
         cache: "no-store",
         headers: {
