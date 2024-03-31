@@ -1,5 +1,5 @@
 import react from 'react';
-import GetNote from '@/app/components/GetNote'
+import getNote from '@/app/components/getNote'
 // import { useRouter } from 'next/router';
 import customDate from '@/app/util/customDate'
 import Link from "next/link"
@@ -10,7 +10,7 @@ export default async function Secret({ params }) {
   // const router = useRouter();
   // const { id } = router.query;
 
-  const { foundNote : note } = await GetNote(params.id);
+  const { foundNote : note } = await getNote(params.id);
   const humanReadableDate = customDate(note.createdAt)
 
   return (
