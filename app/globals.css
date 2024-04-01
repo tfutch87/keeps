@@ -33,7 +33,7 @@ a:hover {
 }
 
 header {
-  background-color: #227753;
+  background-color: #0c492f;
   padding: 16px 32px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
@@ -164,13 +164,25 @@ p {
 form {
   position: relative;
   width: 100%;
-  max-width: 340px;
+  max-width: 550px;
   margin: 30px auto 20px auto;
   background: #fff;
   padding: 15px;
   border-radius: 7px;
   box-shadow: 0 1px 5px rgb(138, 137, 137);
 }
+
+
+@media screen and (max-width: 600px) {
+  form {
+ 
+    width: 100%;
+    max-width: 350px;
+ 
+  }
+}
+
+
 form input,
 form textarea {
   width: 100%;
