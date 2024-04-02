@@ -18,7 +18,8 @@ export const metadata = {
   appleMobileWebAppTitle: "4Keeps",
   appleMobileWebAppStatusBarStyle: "green",
   appleMobileWebAppCapable: "yes",
-  viewPort: "width=device-width, initial-scale=1"
+  appleTouchFullscreen: "yes",
+  viewPort: "width=device-width,initial-scale=1"
 
 
 };
