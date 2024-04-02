@@ -11,6 +11,7 @@ const { notes } = await getNotes();
   return (
     <>
     <CreateArea />
+    <div style={{display: "flex", justifyContent: "start", flexWrap:"wrap", margin:"0 5px", gap: "15px"}}>
       {notes.map((note, index)=>{return <Note
         key={note._id} 
         id={note._id}
@@ -22,9 +23,8 @@ const { notes } = await getNotes();
         createdAt={note.createdAt}
         userProfileImage={note.userProfileImage}
         userName={note.userName}
-
-
         /> })}
+        </div>
     </>
   )
 }
