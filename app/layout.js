@@ -15,18 +15,16 @@ export const metadata = {
   description: "4Keeps is a simple note sharing manager",
   keywords: ["4Keeps", "Note", "Sharing", "Manager"],
   author: "4Keeps",
-  appleMobileWebAppTitle: "4Keeps",
-  appleMobileWebAppStatusBarStyle: "green",
-  appleMobileWebAppCapable: "yes",
-  appleTouchFullscreen: "yes",
-  viewPort: "width=device-width,initial-scale=1"
-
-
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={mcLaren.className}>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+   <meta name="apple-mobile-web-app-title" content="keeps" />
+   <meta name="description" content="keeps" />
+   <meta name="mobile-web-app-capable" content="yes" />
 
         <AuthProvider>
               <body >
