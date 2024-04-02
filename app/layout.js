@@ -17,7 +17,8 @@ export const metadata = {
   author: "4Keeps",
   appleMobileWebAppTitle: "4Keeps",
   appleMobileWebAppStatusBarStyle: "green",
-  appleMobileWebAppCapable: "yes"
+  appleMobileWebAppCapable: "yes",
+  viewPort: "width=device-width, initial-scale=1"
 
 
 };
