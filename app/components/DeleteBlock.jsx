@@ -7,7 +7,7 @@ const DeleteBlock = ({ id }) => {
   const router = useRouter();
 
   const deleteTicket = async () => {
-    const res = await fetch(`https://keeps-delta.vercel.app/api/Notes/${id}`, {
+    const res = await fetch(`https://www.4keeeps.com/api/Notes/${id}`, {
       method: "DELETE",
     });
     if (res.ok) {

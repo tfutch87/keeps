@@ -18,7 +18,7 @@ const humanReadableTime = date.toLocaleString();
 
 const markSeen = async (e) => {
 
-  const res = await fetch(`https://keeps-delta.vercel.app/api/Notes/${e.target.id}`, {
+  const res = await fetch(`https://www.4keeeps.com/api/Notes/${e.target.id}`, {
     method: "PUT",
     cache: "no-store",
     body: JSON.stringify({ status: "seen" }),
@@ -36,7 +36,7 @@ const markSeen = async (e) => {
      <div>
      <p className="category"> 
      
-     <Link className="category-link" href={`https://keeps-delta.vercel.app/secretCategory/${props.category}`} > 
+     <Link className="category-link" href={`https://www.4keeeps.com/secretCategory/${props.category}`} > 
      
      {props.category}
      
@@ -68,7 +68,7 @@ const markSeen = async (e) => {
      </button>
 
       
-      <Link className="button-61" style={{float:"left", backgroundColor: "#fff",color:'#227753'}} id={props.id} onClick={markSeen} href={`https://keeps-delta.vercel.app/secret/${props.id}`}> 
+      <Link className="button-61" style={{float:"left", backgroundColor: "#fff",color:'#227753'}} id={props.id} onClick={markSeen} href={`https://www.4keeeps.com/secret/${props.id}`}> 
       
       OPEN  <AutoStoriesRoundedIcon className="AutoStoriesRoundedIcon"/> 
        

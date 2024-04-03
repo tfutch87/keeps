@@ -14,7 +14,7 @@ pnpm dev
 bun dev
 ```
 
-Open [https://keeps-delta.vercel.app/](https://keeps-delta.vercel.app/) with your browser to see the result.
+Open [https://www.4keeeps.com/](https://www.4keeeps.com/) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
