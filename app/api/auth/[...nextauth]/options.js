@@ -7,7 +7,6 @@ const options = {
     providers: [
         GoogleProvider({
             profile(profile) {
-                console.log("google profile", profile);
         // check if the user is created in the database, if the user is not, create a new user in the DB
         // if the user is already in the DB, return the user from the DB
         User.findOne({ email: profile.email }).then((user) => {
