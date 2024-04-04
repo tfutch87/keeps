@@ -13,9 +13,7 @@ const session = await getServerSession(options)
 
 function rendernotes(notes){
 
-  if(!notes){
-        return <h1>Loading...</h1>
-    }
+
   return(
     notes.map((note, index)=>{return <Note
       key={note._id} 

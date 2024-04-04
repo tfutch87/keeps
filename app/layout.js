@@ -8,7 +8,7 @@ import AuthProvider from '@/app/components/AuthProvider';
 import { McLaren } from 'next/font/google'
 
 
-const  mcLaren = McLaren({ subsets: ["latin"], weight: '400' });
+const mcLaren = McLaren({ subsets: ["latin"], weight: '400' });
 
 export const metadata = {
   title: "4Keeps",
@@ -19,22 +19,26 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={mcLaren.className}>
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-   <meta name="apple-mobile-web-app-title" content="keeps" />
-   <meta name="description" content="keeps" />
-   <meta name="mobile-web-app-capable" content="yes" />
-   <link rel="icon" href="/favicon.ico" sizes="any" />
 
-        <AuthProvider>
-              <body >
-                    <Header />
-                    {children}
-                  {/* <Footer /> */}
-              </body>
-        </AuthProvider>
+    <AuthProvider>
+      <html lang="en" className={mcLaren.className}>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="apple-mobile-web-app-title" content="keeps" />
+        <meta name="description" content="keeps" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
 
-    </html>
+
+        <body >
+          <Header />
+          {children}
+          {/* <Footer /> */}
+        </body>
+
+
+      </html>
+
+    </AuthProvider>
   );
 }

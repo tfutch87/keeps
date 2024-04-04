@@ -85,7 +85,7 @@ export default function Note(props) {
       </div>
       <div style={{ display: "flex", justifyContent: "space-between" }}>
 
-        <p className="time"><span>Created At: {humanReadableTime}</span></p>
+        <p className="time"><span>{humanReadableTime}</span></p>
 
         <div> <DeleteBlock id={props.id} /> </div>
       </div>

@@ -142,6 +142,7 @@ p {
   outline:none;
   border-radius:50%;
   background-color: transparent;
+  cursor: pointer;
 }
 
 
@@ -370,8 +371,12 @@ ul.navigation-list-old li {
 
 #reaction-dislike {
   fill: red;
+  cursor: pointer;
 }
 
 .time span {
   font-size: 12px;
+}
+#delete{
+  cursor: pointer;
 }
