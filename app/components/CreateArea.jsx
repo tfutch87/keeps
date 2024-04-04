@@ -74,6 +74,7 @@ async function handleSubmit(e){
             status: 'unread',
             category : '',
             active : true,
+            userReaction: "noLike"
           }
         )
       
@@ -94,6 +95,7 @@ function form(){
     <input onChange={updateNote} name="status" required={true} value={formData.status} placeholder="Status" type="hidden" />
     <input onChange={updateNote} name="email" required={true} value={formData.email} placeholder="email" type="hidden" />
     <input onChange={updateNote} name="status" required={true} value={formData.status} type="hidden" />
+    <input onChange={updateNote} name="userReaction" required={true} value={formData.userReaction} type="hidden" />
     <div className="box">
          <select onChange={updateNote} id="category" name="category">
         {categoryOptions.map((category)=>(

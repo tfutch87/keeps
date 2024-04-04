@@ -15,6 +15,7 @@ const notesSchema = new Schema({
     status: String,
     category : String,
     active : Boolean,
+    userReaction : String
 
 },  { timestamps: true }  )
 
