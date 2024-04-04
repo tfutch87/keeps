@@ -52,7 +52,8 @@ async function handleSubmit(e){
           headers: {
             'Content-Type': 'application/json'
           },
-          method: 'POST'
+          method: 'POST',
+          cache: "no-store",
         });
       
         const notification_res = await fetch('/api/Send', {
@@ -60,7 +61,8 @@ async function handleSubmit(e){
                   headers: {
                     'Content-Type': 'application/json'
                   },
-                  method: 'POST'
+                  method: 'POST',
+                  cache: "no-store",
         });  
 
 
