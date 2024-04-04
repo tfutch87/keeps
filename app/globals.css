@@ -18,6 +18,10 @@ body {
   
 }
 
+p {
+  color: #0c492f;
+}
+
 a {
   text-decoration: none;
   color: #979797;
@@ -243,7 +247,7 @@ form button {
 
 .box select {
   background-color: #ededed00;
-  color: #848181;
+  color: #0c492f;
   padding: 12px;
   padding-left: 0;
   width:100%;
@@ -379,4 +383,8 @@ ul.navigation-list-old li {
 }
 #delete{
   cursor: pointer;
+}
+
+form input, form textarea {
+  color: #0c492f;
 }

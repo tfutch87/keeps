@@ -20,7 +20,7 @@ export default async function Header(props) {
 
       <header style={{ display: "flex", justifyContent: "space-between" }}>
 
-        <h1 className="logo"> <Link href="/" >4 Keeps</Link></h1>
+        <h1 className="logo"> <Link href="/" >4Keeeps</Link></h1>
 
 
 
