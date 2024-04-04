@@ -4,7 +4,6 @@ import Button from '@mui/material/Button';
 import Link from 'next/link';
 import options from '@/app/api/auth/[...nextauth]/options'
 import Avatar from '@mui/material/Avatar';
-import NavigationList from '@/app/components/NavigationList'
 import BasicSpeedDial from '@/app/components/BasicSpeedDial'
 
 
@@ -28,15 +27,12 @@ export default async function Header(props) {
           <div>
 
             <div className="nav-menu-icon-container" >
-              {/* <OpenNav /> */}
               <BasicSpeedDial />
-              <NavigationList />
-
             </div>
 
           </div>
 
-          {session ? <div style={{ display: "flex", gap: 20, alignItems: "center" }}> <Button style={{ float: "right", color: "#fff" }} variant="contained"> <Link style={{color: "#fff"  }}  href="/api/auth/signout?callbackUrl=/" >Log Out</Link> </Button> <Avatar sx={{ width: 24, height: 24 }} src={session.user.image} /></div> : <Button style={{ float: "right", color: "#fff"  }} variant="contained"><Link  style={{color: "#fff"  }}  href="/api/auth/signin?callbackUrl=/" >Log In</Link> </Button>}
+          {session ? <div style={{ display: "flex", gap: 20, alignItems: "center" }}> <Button sx={{ float: "right", color: "#fff", backgroundColor: "#227753" }} variant="contained"> <Link style={{color: "#fff"  }}  href="/api/auth/signout?callbackUrl=/" >Log Out</Link> </Button> <Avatar sx={{ width: 24, height: 24 }} src={session.user.image} /></div> : <Button sx={{ float: "right", color: "#fff", backgroundColor: "#227753"  }} variant="contained"><Link  style={{color: "#fff"  }}  href="/api/auth/signin?callbackUrl=/" >Log In</Link> </Button>}
 
 
         </div>

@@ -27,7 +27,7 @@ export default function BasicSpeedDial() {
       <SpeedDial
         ariaLabel="SpeedDial basic example"
         sx={{ position: 'absolute', bottom: 27, right: "-10px" }}
-        icon={<MenuRoundedIcon />}
+        icon={<MenuRoundedIcon  />}
         direction="down"
       >
         {actions.map((action) => (
@@ -36,6 +36,7 @@ export default function BasicSpeedDial() {
             icon={action.icon}
             tooltipTitle={action.name}
             href={action.href}
+            
           />
         ))}
       </SpeedDial>

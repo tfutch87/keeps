@@ -388,3 +388,7 @@ ul.navigation-list-old li {
 form input, form textarea {
   color: #0c492f;
 }
+
+.MuiFab-primary{
+  background-color: #d28a19;
+}

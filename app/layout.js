@@ -20,8 +20,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
 
-    <AuthProvider>
+    
       <html lang="en" className={mcLaren.className}>
+      
+      <AuthProvider>
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="apple-mobile-web-app-title" content="keeps" />
@@ -36,9 +38,7 @@ export default function RootLayout({ children }) {
           {/* <Footer /> */}
         </body>
 
-
+</AuthProvider>
       </html>
-
-    </AuthProvider>
   );
 }
