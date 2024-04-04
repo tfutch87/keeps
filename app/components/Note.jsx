@@ -86,7 +86,7 @@ export default function Note(props) {
 
         <p className="time"><span>Created At: {humanReadableTime}</span></p>
 
-        <div> {props.like === "love" ? <><UserReaction like={props.like} id={props.id} /> </> : <><UserReaction like={props.like} id={props.id} /></>} </div>
+        <div> <UserReaction like={props.like} id={props.id} /> </div>
       </div>
     </div>
   )
