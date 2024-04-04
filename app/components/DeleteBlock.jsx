@@ -17,6 +17,8 @@ const DeleteBlock = ({ id }) => {
 
   return (
     <DeleteIcon
+    id="delete"
+      sx={{ color: "#cacaca", padding: ".15em", borderRadius: "50%", backgroundColor: "#f2f2f2", fontSize: "1.5rem" }}
       onClick={deleteTicket}
     />
   );

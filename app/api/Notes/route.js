@@ -29,8 +29,6 @@ export async function DELETE(req, { params }) {
   try {
     const { id } = params;
 
-    console.log(id)
-
     await Note.findByIdAndDelete(id);
     return NextResponse.json({ message: "Note Deleted" }, { status: 200 });
   } catch (error) {

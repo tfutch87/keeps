@@ -133,11 +133,10 @@ p {
 .note button {
   position:relative;
   float:right;
-  margin-right:10px;
+  margin-right:0px;
   color:#d5d5d5;
   background-color: transparent;
   border:none;
-  width:36px;
   height:36px;
   cursor:pointer;
   outline:none;
@@ -298,7 +297,7 @@ ul.navigation-list-old li {
 
 .noteFooter {
   height: 40px;
-  margin-bottom: 1.5em;
+  margin-bottom: .75em;
 }
 .noteBody{
   min-height: 156px;
@@ -371,4 +370,8 @@ ul.navigation-list-old li {
 
 #reaction-dislike {
   fill: red;
+}
+
+.time span {
+  font-size: 12px;
 }

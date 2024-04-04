@@ -18,7 +18,6 @@ export default function UserReaction(props) {
         e.preventDefault()
 
       setLike("love")
-      console.log('click')
         const res = await fetch(`/api/Notes/${props.id}`, {
           method: "PUT",
           cache: "no-store",

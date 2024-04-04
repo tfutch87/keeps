@@ -16,7 +16,7 @@ const options = {
                             userName: profile.name,
                             picture: profile.picture
                         }).then((user) => {
-                            console.log("user created", user);
+                            console.log("user created");
                         });
                     }})
 

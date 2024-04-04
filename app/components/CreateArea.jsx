@@ -20,6 +20,7 @@ const [formData, setFormData] = useState({
   status: 'unseen',
   category : '',
   active : true,
+  userReaction: "noLike"
 });
 
 
@@ -53,7 +54,6 @@ async function handleSubmit(e){
             'Content-Type': 'application/json'
           },
           method: 'POST',
-          cache: "no-store",
         });
       
         const notification_res = await fetch('/api/Send', {
@@ -62,7 +62,7 @@ async function handleSubmit(e){
                     'Content-Type': 'application/json'
                   },
                   method: 'POST',
-                  cache: "no-store",
+      
         });  
 
 

@@ -9,8 +9,6 @@ export default async function Category({ params }) {
 
   const {notes} = await GetCategory(params.category);
 
-// console.log(notes)
-
 function secretsList (){
   return(
     <ul>
@@ -37,8 +35,6 @@ function secretsList (){
 
 const value = params.category;
 const output = value.replace(/%20/g, " ");
-console.log(output); // Output: Date Night
-
 
   return (
     <>

@@ -68,7 +68,8 @@ export default function Note(props) {
 
       <div className="noteFooter">
         <button>
-          <DeleteBlock id={props.id} />
+        <UserReaction like={props.like} id={props.id} />
+          
         </button>
 
 
@@ -86,7 +87,7 @@ export default function Note(props) {
 
         <p className="time"><span>Created At: {humanReadableTime}</span></p>
 
-        <div> <UserReaction like={props.like} id={props.id} /> </div>
+        <div> <DeleteBlock id={props.id} /> </div>
       </div>
     </div>
   )

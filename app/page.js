@@ -34,7 +34,6 @@ function rendernotes(notes){
 }
 
 
-// console.log(notes)
   return (
     <>
     <CreateArea />
