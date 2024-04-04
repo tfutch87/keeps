@@ -25,6 +25,7 @@ export default function RootLayout({ children }) {
    <meta name="apple-mobile-web-app-title" content="keeps" />
    <meta name="description" content="keeps" />
    <meta name="mobile-web-app-capable" content="yes" />
+   <link rel="icon" href="/favicon.ico" sizes="any" />
 
         <AuthProvider>
               <body >
